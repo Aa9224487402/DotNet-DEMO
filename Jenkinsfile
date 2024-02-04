@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Git Checkout ') {
             steps {
-                git 'https://github.com/jaiswaladi246/DotNet-DEMO.git'
+                git 'https://github.com/Aa9224487402/DotNet-DEMO.git'
             }
         }
         
@@ -65,7 +65,7 @@ pipeline {
         
         stage('Docker Deploy') {
             steps {
-                sh "docker run -d -p 5000:5000 adijaiswal/dotnet-demoapp"
+                sh "docker run -d -p 5000:5000 aryashersingh2/dotnet-demoapp"
             }
         }
         
