@@ -46,7 +46,7 @@ pipeline {
         stage('Docker Build & Tag') {
             steps {
                 script{
-                    withDockerRegistry(credentialsId: 'docker1') {
+                    withDockerRegistry(credentialsId: 'docker') {
                         sh "make image"
                     }
                 }
@@ -56,7 +56,7 @@ pipeline {
         stage('Docker Push') {
             steps {
                 script{
-                    withDockerRegistry(credentialsId: 'docker1') {
+                    withDockerRegistry(credentialsId: 'docker') {
                         sh "make push"
                     }
                 }
