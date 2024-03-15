@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Git Checkout ') {
             steps {
-                git 'https://github.com/Aa9224487402/DotNet-DEMO.git'
+                git 'https://github.com/iam-arya/DotNet-DEMO.git'
             }
         }
         
